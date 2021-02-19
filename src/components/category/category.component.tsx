@@ -9,9 +9,9 @@ interface Props {
 export default function Category({ productList }: Props) {
     return <>
         {
-            productList.map((item: any, index: number) => {
+            productList.map((item: any) => {
                 return (
-                    <div className="product-category" key={index}>
+                    <div className="product-category" key={item.categoryDetails.id}>
                         <CategoryHeader categoryName={item.categoryDetails.cat_name} noOfProducts={item.productDetails.length} />
 
                         {
