@@ -1,0 +1,14 @@
+.category-header {
+    border-bottom: 2px solid lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+    .category-name {
+        opacity: 0.6;
+        margin: 0;
+    }
+    .category-length {
+        opacity: 0.4;
+    }
+}

@@ -1,0 +1,107 @@
+.product {
+    padding: 15px 0px;
+    .product-card {
+        box-shadow: 2px 3px 8px 1px lightgrey;
+        padding: 10px 10px;
+        border-radius: 6px;
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+    
+    .product-content {
+        display: flex;
+        justify-content: space-between;
+        min-height: 80px;
+    }
+    
+    .product-image-box {
+        position: relative;
+        flex: 4;
+        .product-image {
+            margin: -25px;
+            box-shadow: 2px 3px 8px 1px lightgrey;
+            border-radius: 6px;
+            width: 120%;
+            max-width: 150px;
+            img {
+                width: 100%;
+                box-shadow: 2px 3px 8px 1px lightgrey;
+                border-radius: 4px;
+            }
+        }
+    }
+    
+    .content {
+        flex: 6;
+        margin-left: 5px;
+        .item-name {
+            padding: 4px 0px;
+            opacity: 0.8;
+            word-break: break-word;
+        }
+        .price {
+            font-size: 12px;
+            padding: 4px 0px;
+            .offer {
+                color: #FFAA4F;
+                margin-right: 4px;
+            }
+            .strike {
+                text-decoration: line-through;
+            }
+            .mrp {
+                opacity: 0.4;
+                margin-right: 4px;
+            }
+            .sell-price {
+                color: #E52233;
+            }
+        }
+    }
+    
+    .product-action {
+        margin-top: 22px;
+        .options {
+            select {
+                width: 100%;
+                padding: 5px 10px;
+            }
+        }
+        .icon-button {
+            margin: 10px 0px 0px 0px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .delivery {
+                font-size: 14px;  
+                opacity: 0.8;
+                .fa-motorcycle {
+                    color: #E52233;
+                    margin-right: 10px;
+                }
+            }
+            .product-add-btn {
+                background: #E52233;
+                color: white;
+                padding: 8px 25px;
+                border: none;
+                border-radius: 4px;
+                outline: none;
+            }
+        }
+    }
+    
+    @media only screen and (min-width: 768px) {
+        .product-card {
+            display: flex;
+            min-height: fit-content;
+        }
+        .product-content {
+            width: 70%;
+        }
+        .product-action {
+            width: 25%;
+        }
+    }
+}
+
